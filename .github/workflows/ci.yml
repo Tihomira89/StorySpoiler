@@ -21,7 +21,7 @@ jobs:
     - name: Restore the packages
       run: dotnet restore
     - name: Run All Tests
-      run: dotnet test --no-build --verbosity normal 
+      run: dotnet test Story.csproj --no-build --verbosity normal 
     - name: Build
       run: dotnet build --no-restore
     - name: Test
